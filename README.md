@@ -1,23 +1,23 @@
 # ◈ نوآوران — پلتفرم دیجیتال
 
-یک وب‌اپلیکیشن مدرن ساخته‌شده با Laravel و React که به‌عنوان MVP (حداقل محصول قابل ارائه) برای یک استارتاپ فناوری طراحی شده است.
+یک وب‌اپلیکیشن مدرن ساخته‌شده با Laravel و React که به‌عنوان MVP برای یک استارتاپ فناوری طراحی شده است.
 
 ---
 
 ## 📸 تصاویر پروژه
 
 ### صفحه اصلی
-![Home Page 1](screenshots/home-1.png)
-![Home Page 2](screenshots/home-2.png)
+![Home Page 1](images/1.png)
+![Home Page 2](images/5.png)
 
 ### صفحه درباره ما
-![About Page](screenshots/about.png)
+![About Page](images/2.png)
 
 ### صفحه خدمات
-![Services Page](screenshots/services.png)
+![Services Page](images/3.png)
 
 ### صفحه تماس
-![Contact Page](screenshots/contact.png)
+![Contact Page](images/4.png)
 
 ---
 
@@ -118,6 +118,8 @@ npm run dev
 ---
 
 ## 📁 ساختار پروژه
+
+```plaintext
 resources/js/
 ├── layouts/
 │   └── MainLayout.tsx     # Layout مشترک (Navbar + Footer)
@@ -128,6 +130,7 @@ resources/js/
 │   └── contact.tsx        # تماس
 app/Http/Controllers/
 └── PageController.php     # کنترل routing صفحات
+```
 
 ---
 
