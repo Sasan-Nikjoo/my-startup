@@ -1,139 +1,139 @@
-# ◈ نوآوران — پلتفرم دیجیتال
+# ◈ Noavaran — Digital Platform
 
-یک وب‌اپلیکیشن مدرن ساخته‌شده با Laravel و React که به‌عنوان MVP برای یک استارتاپ فناوری طراحی شده است.
+A modern web application built with Laravel and React, designed as an MVP (Minimum Viable Product) for a technology startup.
 
 ---
 
-## 📸 تصاویر پروژه
+## 📸 Screenshots
 
-### صفحه اصلی
+### Home Page
 ![Home Page 1](images/1.png)
 ![Home Page 2](images/5.png)
 
-### صفحه درباره ما
+### About Page
 ![About Page](images/2.png)
 
-### صفحه خدمات
+### Services Page
 ![Services Page](images/3.png)
 
-### صفحه تماس
+### Contact Page
 ![Contact Page](images/4.png)
 
 ---
 
-## 🛠️ تکنولوژی‌های استفاده‌شده
+## 🛠️ Tech Stack
 
-| لایه | تکنولوژی |
+| Layer | Technology |
 |---|---|
 | Backend | Laravel 11 |
 | Frontend | React 18 + TypeScript |
 | Bridge | Inertia.js |
 | Styling | Tailwind CSS v4 |
 | Build Tool | Vite |
-| محیط توسعه | Laravel Herd |
+| Local Environment | Laravel Herd |
 | Version Control | Git + GitHub |
 
 ---
 
-## 📐 معماری پروژه
+## 📐 Architecture
 
-این پروژه از معماری **Monolithic + SPA** استفاده می‌کند:
+This project uses a **Monolithic + SPA** architecture:
 
-- **Laravel** منطق سرور، routing و ارسال داده را مدیریت می‌کند
-- **Inertia.js** نقش پل ارتباطی بین Laravel و React را دارد
-- **React** رندر صفحات را در سمت کاربر انجام می‌دهد
-- **Tailwind CSS v4** استایل‌دهی با سیستم طراحی سفارشی
+- **Laravel** handles server-side logic, routing, and data delivery
+- **Inertia.js** acts as the bridge between Laravel and React
+- **React** handles client-side rendering
+- **Tailwind CSS v4** provides styling with a custom design system
 
 ---
 
-## 🎨 سیستم طراحی و برند
+## 🎨 Design System & Brand
 
-رنگ‌های برند در `resources/css/app.css` با استفاده از `@theme` در Tailwind v4 تعریف شده‌اند:
+Brand colors are defined in `resources/css/app.css` using the `@theme` directive in Tailwind v4:
 
-| نام | کد رنگ | کاربرد |
+| Name | Hex | Usage |
 |---|---|---|
-| Primary | `#6C63FF` | دکمه‌ها، لینک‌ها، هایلایت |
-| Secondary | `#F50057` | accent و تأکید |
-| Brand Dark | `#1A1A2E` | Navbar، Footer، پس‌زمینه تاریک |
-| Muted | `#6B7280` | متن‌های فرعی |
+| Primary | `#6C63FF` | Buttons, links, highlights |
+| Secondary | `#F50057` | Accents and emphasis |
+| Brand Dark | `#1A1A2E` | Navbar, Footer, dark backgrounds |
+| Muted | `#6B7280` | Secondary text |
 
-فونت اصلی: **Vazirmatn** (برای پشتیبانی از زبان فارسی)
-
----
-
-## 🚀 صفحات پیاده‌سازی‌شده
-
-- **/** — صفحه اصلی (Hero، ویژگی‌ها، CTA)
-- **/about** — درباره ما (داستان، آمار، تیم)
-- **/services** — خدمات (لیست سرویس‌ها)
-- **/contact** — تماس (فرم ارتباطی)
+Primary font: **Vazirmatn** (with Persian language support)
 
 ---
 
-## 💡 متدولوژی توسعه
+## 🚀 Pages
+
+- **/** — Home (Hero, Features, CTA)
+- **/about** — About Us (Story, Stats, Team)
+- **/services** — Services (Service list)
+- **/contact** — Contact (Contact form)
+
+---
+
+## 💡 Development Methodology
 
 ### Agile
-پروژه بر اساس اصول Agile توسعه یافته است — به جای برنامه‌ریزی کامل از ابتدا، کار به بخش‌های کوچک تقسیم شده و به‌صورت تکرارشونده پیش رفته است.
+The project was developed following Agile principles — instead of planning everything upfront, work was broken into small increments and delivered iteratively.
 
 ### Scrum
-ساختار کار بر اساس Sprint تعریف شد:
-- **Sprint 1** — راه‌اندازی پروژه و تنظیم محیط توسعه
-- **Sprint 2** — طراحی سیستم رنگ‌بندی و Layout مشترک
-- **Sprint 3** — پیاده‌سازی صفحات عمومی
+Work was structured around Sprints:
+- **Sprint 1** — Project setup and development environment configuration
+- **Sprint 2** — Design system, color palette, and shared Layout
+- **Sprint 3** — Implementation of all public pages
 
 ### MVP
-این پروژه یک MVP واقعی است — فقط صفحات عمومی ضروری پیاده‌سازی شده‌اند. قابلیت‌های پیشرفته‌تر (احراز هویت، پنل مدیریت، API) در Sprint‌های بعدی اضافه خواهند شد.
+This project is a true MVP — only the essential public-facing pages have been implemented. More advanced features (authentication, admin panel, API) will be added in future sprints.
 
 ---
 
-## ⚙️ نصب و راه‌اندازی
+## ⚙️ Installation
 
-**پیش‌نیازها:**
+**Prerequisites:**
 - PHP 8.2+
 - Node.js 20+
 - Laravel Herd
 - Composer
 
-**مراحل:**
+**Steps:**
 
 ```bash
-# کلون پروژه
+# Clone the repository
 git clone https://github.com/USERNAME/my-startup.git
 cd my-startup
 
-# نصب dependencies
+# Install dependencies
 composer install
 npm install
 
-# تنظیم env
+# Set up environment
 cp .env.example .env
 php artisan key:generate
 
-# اجرای پروژه
+# Run the project
 npm run dev
 ```
 
-سپس سایت روی آدرس `http://my-startup.test` در دسترس خواهد بود.
+The site will be available at `http://my-startup.test`
 
 ---
 
-## 📁 ساختار پروژه
+## 📁 Project Structure
 
 ```plaintext
 resources/js/
 ├── layouts/
-│   └── MainLayout.tsx     # Layout مشترک (Navbar + Footer)
+│   └── MainLayout.tsx     # Shared layout (Navbar + Footer)
 ├── pages/
-│   ├── home.tsx           # صفحه اصلی
-│   ├── about.tsx          # درباره ما
-│   ├── services.tsx       # خدمات
-│   └── contact.tsx        # تماس
+│   ├── home.tsx           # Home page
+│   ├── about.tsx          # About page
+│   ├── services.tsx       # Services page
+│   └── contact.tsx        # Contact page
 app/Http/Controllers/
-└── PageController.php     # کنترل routing صفحات
+└── PageController.php     # Page routing controller
 ```
 
 ---
 
-## 👤 توسعه دهنده ساسان نیک جو
+## 👤 Developer — Sasan Nikjoo
 
-ساخته‌شده با ❤️ برای ایران سرور
+Built with ❤️ for Iran Server
